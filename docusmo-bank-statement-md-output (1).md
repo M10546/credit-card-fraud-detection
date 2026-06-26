@@ -1,0 +1,140 @@
+# Credit Card Fraud Detection System
+
+A Java-based academic project that simulates a real-time credit card fraud detection system using rule-based analytics and comparative machine learning techniques.
+
+## Project Overview
+
+Financial fraud detection systems must identify suspicious transactions rapidly while minimizing false positives. This project implements a multi-layered fraud detection engine that evaluates transaction patterns based on:
+
+- Transaction amount anomalies
+- Transaction frequency patterns
+- Merchant category risk assessment
+- Geographic location inconsistencies
+
+The project also includes a simplified decision-tree classifier to compare traditional rule-based systems with supervised machine learning approaches.
+
+---
+
+## Features
+
+### Rule-Based Fraud Detection
+- High-value transaction detection
+- High-frequency transaction monitoring
+- Geographic anomaly detection
+- Risky merchant category detection
+- Multi-rule fraud scoring
+
+### Decision Tree Classification
+- Simple supervised classification logic
+- Comparative fraud prediction analysis
+- Performance benchmarking
+
+### Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- False positive analysis
+
+---
+
+## System Architecture
+
+```
+Transaction Input
+        |
+        v
++-------------------+
+| Rule Engine       |
+|-------------------|
+| Amount Analysis   |
+| Frequency Check   |
+| Location Check    |
+| Merchant Check    |
++-------------------+
+        |
+        v
+ Fraud Classification
+        |
+        v
+ Evaluation Module
+        |
+        v
+ Performance Report
+```
+
+---
+
+## Technologies Used
+
+- Java
+- Object-Oriented Programming
+- Rule-Based Systems
+- Decision Tree Classification
+- Data Structures
+- Algorithm Design
+
+---
+
+## Fraud Detection Rules
+
+| Rule | Condition |
+|------|-----------|
+| High Amount | Amount > ₹50,000 |
+| High Frequency | More than 5 transactions/hour |
+| Geographic Change | Transaction location differs |
+| Risk Merchant | Crypto, Gambling, Luxury, International Transfer |
+
+---
+
+## Sample Output
+
+```
+===== RULE-BASED DETECTION =====
+
+⚠ FRAUD ALERT
+Transaction: Transaction{id='TX002', amount=70000.00, category='LUXURY', location='INDIA'}
+Triggered Rules: [HIGH_AMOUNT, RISKY_MERCHANT]
+
+⚠ FRAUD ALERT
+Transaction: Transaction{id='TX003', amount=45000.00, category='CRYPTO', location='USA'}
+Triggered Rules: [RISKY_MERCHANT, LOCATION_CHANGE]
+
+===== Evaluation Report =====
+Accuracy : 100.00%
+Precision: 100.00%
+Recall   : 100.00%
+```
+
+---
+
+## Future Improvements
+
+- Integration with machine learning frameworks
+- Random Forest and XGBoost models
+- Real-time transaction streaming
+- REST API implementation
+- Fraud risk scoring engine
+- Database integration
+- Dashboard visualization
+- Deep learning anomaly detection
+
+---
+
+## Machine Learning Integration Roadmap
+
+Future versions will incorporate:
+
+- Decision Trees
+- Random Forest
+- Gradient Boosting
+- Isolation Forest
+- Autoencoders
+- Graph-based fraud detection
+
+---
+
+## Author
+
+**Academic Project — Credit Card Fraud Detection System**
+
+Developed as a study of financial fraud analytics, rule-based expert systems, and machine learning approaches for transaction monitoring.
